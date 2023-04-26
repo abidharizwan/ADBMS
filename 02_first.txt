@@ -1,0 +1,50 @@
+-- 
+-- Roll No:02
+-- Name:ABIDHA RIZWAN C A
+-- Program:1
+-- 
+
+
+--
+-- Table structure for table DEPT
+--
+CREATE TABLE DEPT(DNO INT PRIMARY KEY,DNAME VARCHAR(20));
+
+--
+-- Table structure for table STUDENT
+--
+CREATE TABLE STUDENT(ROLLNO INT PRIMARY KEY,NAME VARCHAR(20),AGE INT DEFAULT(20) CHECK(AGE>20 AND AGE<50),ADDRESS VARCHAR(30),DNUM INT,FOREIGN KEY(DNUM)REFERENCES DEPT(DNO));
+
+
+-- ---------create/alter statement commands----------- # This line may be removed in the actual file
+
+--
+-- Dumping data for table DEPT
+--
+INSERT INTO DEPT VALUES(1,"MCA");
+INSERT INTO DEPT VALUES(2,"MBA");
+INSERT INTO DEPT VALUES(3,"MCOM");
+INSERT INTO DEPT VALUES(4,"MSC");
+--
+-- Dumping data for table STUDENT
+--
+INSERT INTO STUDENT VALUES(1,"ABIDHA",22,"WAYANAD",3);
+INSERT INTO STUDENT VALUES(2,'RIZWAN',32,'KALPETTA',2);
+INSERT INTO STUDENT VALUES(3,'ABHINA',43,'MEENANGADI',4);
+INSERT INTO STUDENT VALUES(4,'ARPITHA',22,'BATHERY',1);
+
+
+
+-- --------insert/update statement commands----------- # This line may be removed in the actcual file
+
+--
+-- SQl Query Statements
+--
+
+-- -----SQL query statments preceeded by the its question-------- # This line may be removed in the actual file
+-- -----Question number should be commented---------------#This line may be removed in the actual file
+
+
+
+
+
